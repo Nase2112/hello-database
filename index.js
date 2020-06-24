@@ -12,7 +12,8 @@ const db = process.env.MONGODB_URI || 'mongodb://localhost/hellodb';
 
 const app = express();
 
-app.use = express();
+app.use(cors());
+
 
 // conexion a la base de datos
 mongoose.set('useUnifiedTopology', true);
